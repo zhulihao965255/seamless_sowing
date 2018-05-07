@@ -34,7 +34,6 @@
       }
       aLi[globalIndex].className = "active";
       let timer = setInterval(function () {
-        console.log(oImg.offsetLeft + "+" + -index * 490);
         if (oImg.offsetLeft == -index * 490) {
           clearInterval(timer);
           isRun = true;
@@ -52,7 +51,7 @@
 
     }
 
-
+    //实现鼠标放在数字按钮上的图片切换
     for (let i = 0; i < aLi.length; i++) {
       aLi[i].index = i;
       aLi[i].onmouseover = function () {
@@ -62,7 +61,7 @@
       }
     }
 
-
+    //点击向左向右按钮时图片的切换
     aBtn[0].onclick = function () {
       if (isRun) {
         changeImg(globalIndex - 1);
@@ -83,6 +82,7 @@
       }
     }, 1000);
 
+    //鼠标放在照片上时停止轮播
     oBox.onmouseover = function () {
       isTimer = false;
     }
