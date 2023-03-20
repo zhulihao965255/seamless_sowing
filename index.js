@@ -19,7 +19,7 @@
         dirction = -10;
       }
       globalIndex = index;
-
+      console.log(122);
       if (index == -1) {
         oImg.style.left = -(oImg.offsetWidth - 490) + "px";
         globalIndex = 4;
