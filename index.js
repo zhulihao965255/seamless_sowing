@@ -8,7 +8,7 @@
     let isTimer = true;
 
     oImg.style.width = oImg.offsetWidth + 490 + "px";
-
+    console.log(111);
     //切换照片  控制left属性 
     function changeImg(index) {
       isRun = false;
